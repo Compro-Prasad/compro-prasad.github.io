@@ -4,6 +4,16 @@ title: "The base64 encoder"
 permalink: base64encoder/
 ---
 
+## Inspiration behind this post
+While I was trying to make a simple single page rich text editor using HTML and
+JavaScript, I came across
+[this](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content#Example_a_simple_but_complete_rich_text_editor)
+article from Mozilla. There I found that the images used were not external
+files. Instead they were embedded inside the HTML document itself. I became
+curious about it. I searched on the internet for a way to do this thing. But it
+wasn't possible unless and until you had a converter available. So, I thought
+why not make one for yourself.
+
 ## What is **base64**?
 **base64** is a simple way to represent **binary data** in an ASCII string format
 by translating it into a [radix](https://en.wikipedia.org/wiki/Radix)-64
@@ -86,6 +96,9 @@ respectively.
 
 ## Applications
 Read on [Wikipedia](https://en.wikipedia.org/wiki/Base64#Other_applications)
+
+## Exercise
+Making the **base64** decoder.
 
 ## Thank you for your time
 Hope you got what you wanted. For the full source code refer
