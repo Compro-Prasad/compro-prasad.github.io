@@ -29,14 +29,14 @@ The above is an excerpt from
 specifying the importance of **base64**. Do read the answer before reading
 further.
 
-## The mechanism
+## The encoder's mechanism
 
 ### The logic(algorithm)
-The end task is to represent a byte in 6 bits to get to radix-64(because that is
-our target). But we can't do that directly because we will loose 2 bits of
-information per byte. We could group more number of bytes to achieve the lowest
-common factor of 6 and 8 which is 24 i.e. 3 bytes. So, we need to group three
-consecutive bytes and convert them to 4 bytes having 6 bits each.
+The end task is to represent a byte in 6 bits. But we can't do that directly
+because we will loose 2 bits of information per byte. We could group more number
+of bytes to achieve the lowest common factor of 6 and 8 which is 24 i.e. 3 bytes.
+So, we need to group three consecutive bytes and convert them to 4 bytes having
+6 bits each.
 
 ### The equations
 **Prerequisite: [Bitwise Operations](https://en.wikipedia.org/wiki/Bitwise_operation)**
