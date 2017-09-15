@@ -42,4 +42,4 @@ std::string base64Encoder(const std::string &str) {
   return result;
 }
 
-int main() { std::cout << base64Encoder("abhi") << std::endl; }
+int main() { std::cout << base64Encoder("Hello, World!") << std::endl; }
